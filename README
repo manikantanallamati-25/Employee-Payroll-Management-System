@@ -1,0 +1,55 @@
+# Employee Payroll System
+
+A menu-driven Java console application for managing employee records and calculating payroll.
+
+## Features
+
+- Add, view, search, update, and delete employee records
+- Generate payroll details and a payslip for an employee
+- Calculate salary components from the employee's basic salary
+
+## Salary calculation
+
+- HRA: 20% of basic salary
+- DA: 10% of basic salary
+- Allowance: 5% of basic salary
+- Gross salary: basic salary + HRA + DA + allowance
+- Deduction: 5% of gross salary
+- Net salary: gross salary - deduction
+
+## Requirements
+
+- Java Development Kit (JDK) 8 or later
+
+Check that Java is installed:
+
+```powershell
+java -version
+javac -version
+```
+
+## Compile and run
+
+Open a terminal in the folder containing the `.java` files, then run:
+
+```powershell
+javac *.java
+java Main
+```
+
+Choose an option from the menu and follow the prompts. Select **8** to exit.
+
+## Project structure
+
+| File | Purpose |
+| --- | --- |
+| `Main.java` | Application entry point and console menu |
+| `Employee.java` | Employee data model |
+| `EmployeeManager.java` | Employee record operations |
+| `Payroll.java` | Salary calculation and payroll/payslip display |
+| `PayrollManager.java` | Payroll workflows |
+
+## Notes
+
+- Employee data is held in memory and is cleared when the application exits.
+- The employee list currently has a capacity of 10 records.
